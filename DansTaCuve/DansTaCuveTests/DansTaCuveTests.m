@@ -1,11 +1,3 @@
-//
-//  DansTaCuveTests.m
-//  DansTaCuveTests
-//
-//  Created by Raphaël on 26/09/13.
-//  Copyright (c) 2013 Dans ta cuve !. All rights reserved.
-//
-
 #import <XCTest/XCTest.h>
 
 @interface DansTaCuveTests : XCTestCase
@@ -28,7 +20,7 @@
 
 - (void)testExample
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    //XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
 }
 
 @end

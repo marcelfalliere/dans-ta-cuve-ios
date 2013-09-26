@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64237AC717F42E210052E5B7 /* RMMeetingViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64237AC617F42E210052E5B7 /* RMMeetingViewControllerTests.m */; };
+		64237ACC17F43A5F0052E5B7 /* RMMeetingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64237ACB17F43A5F0052E5B7 /* RMMeetingViewController.m */; };
+		64237ADB17F4589B0052E5B7 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64237ADA17F4589B0052E5B7 /* libOCMock.a */; };
 		64831C8717F429FA00F2B5AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64831C8617F429FA00F2B5AD /* Foundation.framework */; };
 		64831C8917F429FA00F2B5AD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64831C8817F429FA00F2B5AD /* CoreGraphics.framework */; };
 		64831C8B17F429FA00F2B5AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64831C8A17F429FA00F2B5AD /* UIKit.framework */; };
@@ -35,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		64237AC617F42E210052E5B7 /* RMMeetingViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMMeetingViewControllerTests.m; path = ViewControllers/RMMeetingViewControllerTests.m; sourceTree = "<group>"; };
+		64237ACA17F43A5F0052E5B7 /* RMMeetingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMMeetingViewController.h; path = ViewControllers/RMMeetingViewController.h; sourceTree = "<group>"; };
+		64237ACB17F43A5F0052E5B7 /* RMMeetingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMMeetingViewController.m; path = ViewControllers/RMMeetingViewController.m; sourceTree = "<group>"; };
+		64237ADA17F4589B0052E5B7 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = ThirdParty/OCMock/libOCMock.a; sourceTree = "<group>"; };
+		64237ADD17F45E890052E5B7 /* RMMeetingRepositoryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMMeetingRepositoryProtocol.h; path = Models/RMMeetingRepositoryProtocol.h; sourceTree = "<group>"; };
 		64831C8317F429FA00F2B5AD /* DansTaCuve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DansTaCuve.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64831C8617F429FA00F2B5AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		64831C8817F429FA00F2B5AD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64237ADB17F4589B0052E5B7 /* libOCMock.a in Frameworks */,
 				64831C8917F429FA00F2B5AD /* CoreGraphics.framework in Frameworks */,
 				64831C8D17F429FA00F2B5AD /* CoreData.framework in Frameworks */,
 				64831C8B17F429FA00F2B5AD /* UIKit.framework in Frameworks */,
@@ -81,9 +90,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64237AC817F42E300052E5B7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				64237AC617F42E210052E5B7 /* RMMeetingViewControllerTests.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		64237AC917F43A400052E5B7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				64237ACA17F43A5F0052E5B7 /* RMMeetingViewController.h */,
+				64237ACB17F43A5F0052E5B7 /* RMMeetingViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		64237ACD17F446620052E5B7 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ThirdParty;
+			sourceTree = "<group>";
+		};
+		64237ADC17F45E450052E5B7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				64237ADD17F45E890052E5B7 /* RMMeetingRepositoryProtocol.h */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		64831C7A17F429FA00F2B5AD = {
 			isa = PBXGroup;
 			children = (
+				64237ACD17F446620052E5B7 /* ThirdParty */,
 				64831C8E17F429FA00F2B5AD /* DansTaCuve */,
 				64831CAB17F429FA00F2B5AD /* DansTaCuveTests */,
 				64831C8517F429FA00F2B5AD /* Frameworks */,
@@ -103,6 +145,7 @@
 		64831C8517F429FA00F2B5AD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				64237ADA17F4589B0052E5B7 /* libOCMock.a */,
 				64831C8617F429FA00F2B5AD /* Foundation.framework */,
 				64831C8817F429FA00F2B5AD /* CoreGraphics.framework */,
 				64831C8A17F429FA00F2B5AD /* UIKit.framework */,
@@ -115,6 +158,8 @@
 		64831C8E17F429FA00F2B5AD /* DansTaCuve */ = {
 			isa = PBXGroup;
 			children = (
+				64237ADC17F45E450052E5B7 /* Models */,
+				64237AC917F43A400052E5B7 /* ViewControllers */,
 				64831C9717F429FA00F2B5AD /* RMAppDelegate.h */,
 				64831C9817F429FA00F2B5AD /* RMAppDelegate.m */,
 				64831C9D17F429FA00F2B5AD /* Images.xcassets */,
@@ -138,6 +183,7 @@
 		64831CAB17F429FA00F2B5AD /* DansTaCuveTests */ = {
 			isa = PBXGroup;
 			children = (
+				64237AC817F42E300052E5B7 /* ViewControllers */,
 				64831CB117F429FA00F2B5AD /* DansTaCuveTests.m */,
 				64831CAC17F429FA00F2B5AD /* Supporting Files */,
 			);
@@ -252,6 +298,7 @@
 				64831C9517F429FA00F2B5AD /* main.m in Sources */,
 				64831C9917F429FA00F2B5AD /* RMAppDelegate.m in Sources */,
 				64831C9C17F429FA00F2B5AD /* DansTaCuve.xcdatamodeld in Sources */,
+				64237ACC17F43A5F0052E5B7 /* RMMeetingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64831CB217F429FA00F2B5AD /* DansTaCuveTests.m in Sources */,
+				64237AC717F42E210052E5B7 /* RMMeetingViewControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +420,15 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DansTaCuve/DansTaCuve-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = "DansTaCuve/DansTaCuve-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/raphael/Documents/Code/dans-ta-cuve-ios/DansTaCuve/ThirdParty/OCMock",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -385,7 +441,15 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DansTaCuve/DansTaCuve-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = "DansTaCuve/DansTaCuve-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/raphael/Documents/Code/dans-ta-cuve-ios/DansTaCuve/ThirdParty/OCMock",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -407,7 +471,24 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/ThirdParty/OCMock",
+				);
 				INFOPLIST_FILE = "DansTaCuveTests/DansTaCuveTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/raphael/Documents/Code/dans-ta-cuve-ios/DansTaCuve/ThirdParty/OCMock",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+					"-force_load",
+					"$(SRCROOT)/ThirdParty/OCMock/libOCMock.a",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -426,7 +507,24 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DansTaCuve/DansTaCuve-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/ThirdParty/OCMock",
+				);
 				INFOPLIST_FILE = "DansTaCuveTests/DansTaCuveTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/raphael/Documents/Code/dans-ta-cuve-ios/DansTaCuve/ThirdParty/OCMock",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+					"-force_load",
+					"$(SRCROOT)/ThirdParty/OCMock/libOCMock.a",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -452,6 +550,7 @@
 				64831CB717F429FA00F2B5AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		64831CB817F429FA00F2B5AD /* Build configuration list for PBXNativeTarget "DansTaCuveTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +559,7 @@
 				64831CBA17F429FA00F2B5AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
