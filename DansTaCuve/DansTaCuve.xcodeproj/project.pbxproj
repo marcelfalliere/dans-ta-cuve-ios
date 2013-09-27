@@ -15,6 +15,7 @@
 		64237AFC17F48A640052E5B7 /* RMMeetingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64237AFA17F48A640052E5B7 /* RMMeetingViewController.m */; };
 		64237B0117F491980052E5B7 /* RMFileBasedMeetingRepositoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64237B0017F491980052E5B7 /* RMFileBasedMeetingRepositoryTests.m */; };
 		64237B0317F491AE0052E5B7 /* RMMeetingViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64237B0217F491AE0052E5B7 /* RMMeetingViewControllerTests.m */; };
+		64237B0517F577C00052E5B7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64237B0417F577C00052E5B7 /* CoreLocation.framework */; };
 		64831C8717F429FA00F2B5AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64831C8617F429FA00F2B5AD /* Foundation.framework */; };
 		64831C8917F429FA00F2B5AD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64831C8817F429FA00F2B5AD /* CoreGraphics.framework */; };
 		64831C8B17F429FA00F2B5AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64831C8A17F429FA00F2B5AD /* UIKit.framework */; };
@@ -57,6 +58,7 @@
 		64237AFB17F48A640052E5B7 /* RMMeetingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMeetingViewController.h; sourceTree = "<group>"; };
 		64237B0017F491980052E5B7 /* RMFileBasedMeetingRepositoryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMFileBasedMeetingRepositoryTests.m; sourceTree = "<group>"; };
 		64237B0217F491AE0052E5B7 /* RMMeetingViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMMeetingViewControllerTests.m; sourceTree = "<group>"; };
+		64237B0417F577C00052E5B7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		64831C8317F429FA00F2B5AD /* DansTaCuve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DansTaCuve.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64831C8617F429FA00F2B5AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		64831C8817F429FA00F2B5AD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -82,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64237B0517F577C00052E5B7 /* CoreLocation.framework in Frameworks */,
 				64237ADB17F4589B0052E5B7 /* libOCMock.a in Frameworks */,
 				64831C8917F429FA00F2B5AD /* CoreGraphics.framework in Frameworks */,
 				64831C8D17F429FA00F2B5AD /* CoreData.framework in Frameworks */,
@@ -181,6 +184,7 @@
 		64831C8517F429FA00F2B5AD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				64237B0417F577C00052E5B7 /* CoreLocation.framework */,
 				64237ADA17F4589B0052E5B7 /* libOCMock.a */,
 				64831C8617F429FA00F2B5AD /* Foundation.framework */,
 				64831C8817F429FA00F2B5AD /* CoreGraphics.framework */,
