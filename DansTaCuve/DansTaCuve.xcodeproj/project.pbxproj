@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		64237AC717F42E210052E5B7 /* RMMeetingViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64237AC617F42E210052E5B7 /* RMMeetingViewControllerTests.m */; };
-		64237ACC17F43A5F0052E5B7 /* RMMeetingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64237ACB17F43A5F0052E5B7 /* RMMeetingViewController.m */; };
 		64237ADB17F4589B0052E5B7 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64237ADA17F4589B0052E5B7 /* libOCMock.a */; };
+		64237AEA17F482EB0052E5B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64237AE917F482EB0052E5B7 /* Main.storyboard */; };
+		64237AF417F48A390052E5B7 /* RMFileBasedMeetingRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 64237AF117F48A390052E5B7 /* RMFileBasedMeetingRepository.m */; };
+		64237AF517F48A390052E5B7 /* RMMeeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 64237AF217F48A390052E5B7 /* RMMeeting.m */; };
+		64237AF917F48A4C0052E5B7 /* RMMeetingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64237AF617F48A4C0052E5B7 /* RMMeetingView.m */; };
+		64237AFC17F48A640052E5B7 /* RMMeetingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64237AFA17F48A640052E5B7 /* RMMeetingViewController.m */; };
+		64237B0117F491980052E5B7 /* RMFileBasedMeetingRepositoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64237B0017F491980052E5B7 /* RMFileBasedMeetingRepositoryTests.m */; };
+		64237B0317F491AE0052E5B7 /* RMMeetingViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64237B0217F491AE0052E5B7 /* RMMeetingViewControllerTests.m */; };
 		64831C8717F429FA00F2B5AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64831C8617F429FA00F2B5AD /* Foundation.framework */; };
 		64831C8917F429FA00F2B5AD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64831C8817F429FA00F2B5AD /* CoreGraphics.framework */; };
 		64831C8B17F429FA00F2B5AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64831C8A17F429FA00F2B5AD /* UIKit.framework */; };
@@ -38,11 +43,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		64237AC617F42E210052E5B7 /* RMMeetingViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMMeetingViewControllerTests.m; path = ViewControllers/RMMeetingViewControllerTests.m; sourceTree = "<group>"; };
-		64237ACA17F43A5F0052E5B7 /* RMMeetingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMMeetingViewController.h; path = ViewControllers/RMMeetingViewController.h; sourceTree = "<group>"; };
-		64237ACB17F43A5F0052E5B7 /* RMMeetingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMMeetingViewController.m; path = ViewControllers/RMMeetingViewController.m; sourceTree = "<group>"; };
 		64237ADA17F4589B0052E5B7 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = ThirdParty/OCMock/libOCMock.a; sourceTree = "<group>"; };
-		64237ADD17F45E890052E5B7 /* RMMeetingRepositoryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMMeetingRepositoryProtocol.h; path = Models/RMMeetingRepositoryProtocol.h; sourceTree = "<group>"; };
+		64237AE917F482EB0052E5B7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		64237AEF17F48A390052E5B7 /* RMMeeting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMeeting.h; sourceTree = "<group>"; };
+		64237AF017F48A390052E5B7 /* RMFileBasedMeetingRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMFileBasedMeetingRepository.h; sourceTree = "<group>"; };
+		64237AF117F48A390052E5B7 /* RMFileBasedMeetingRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMFileBasedMeetingRepository.m; sourceTree = "<group>"; };
+		64237AF217F48A390052E5B7 /* RMMeeting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMMeeting.m; sourceTree = "<group>"; };
+		64237AF317F48A390052E5B7 /* RMMeetingRepositoryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMeetingRepositoryProtocol.h; sourceTree = "<group>"; };
+		64237AF617F48A4C0052E5B7 /* RMMeetingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMMeetingView.m; sourceTree = "<group>"; };
+		64237AF717F48A4C0052E5B7 /* RMMeetingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMeetingView.h; sourceTree = "<group>"; };
+		64237AF817F48A4C0052E5B7 /* RMMeetingViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMeetingViewProtocol.h; sourceTree = "<group>"; };
+		64237AFA17F48A640052E5B7 /* RMMeetingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMMeetingViewController.m; sourceTree = "<group>"; };
+		64237AFB17F48A640052E5B7 /* RMMeetingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMeetingViewController.h; sourceTree = "<group>"; };
+		64237B0017F491980052E5B7 /* RMFileBasedMeetingRepositoryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMFileBasedMeetingRepositoryTests.m; sourceTree = "<group>"; };
+		64237B0217F491AE0052E5B7 /* RMMeetingViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMMeetingViewControllerTests.m; sourceTree = "<group>"; };
 		64831C8317F429FA00F2B5AD /* DansTaCuve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DansTaCuve.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64831C8617F429FA00F2B5AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		64831C8817F429FA00F2B5AD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -93,18 +107,18 @@
 		64237AC817F42E300052E5B7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				64237AC617F42E210052E5B7 /* RMMeetingViewControllerTests.m */,
+				64237B0217F491AE0052E5B7 /* RMMeetingViewControllerTests.m */,
 			);
-			name = ViewControllers;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		64237AC917F43A400052E5B7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				64237ACA17F43A5F0052E5B7 /* RMMeetingViewController.h */,
-				64237ACB17F43A5F0052E5B7 /* RMMeetingViewController.m */,
+				64237AFA17F48A640052E5B7 /* RMMeetingViewController.m */,
+				64237AFB17F48A640052E5B7 /* RMMeetingViewController.h */,
 			);
-			name = ViewControllers;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		64237ACD17F446620052E5B7 /* ThirdParty */ = {
@@ -117,9 +131,31 @@
 		64237ADC17F45E450052E5B7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				64237ADD17F45E890052E5B7 /* RMMeetingRepositoryProtocol.h */,
+				64237AEF17F48A390052E5B7 /* RMMeeting.h */,
+				64237AF217F48A390052E5B7 /* RMMeeting.m */,
+				64237AF017F48A390052E5B7 /* RMFileBasedMeetingRepository.h */,
+				64237AF117F48A390052E5B7 /* RMFileBasedMeetingRepository.m */,
+				64237AF317F48A390052E5B7 /* RMMeetingRepositoryProtocol.h */,
 			);
-			name = Models;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		64237AE117F47BC00052E5B7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				64237AF617F48A4C0052E5B7 /* RMMeetingView.m */,
+				64237AF717F48A4C0052E5B7 /* RMMeetingView.h */,
+				64237AF817F48A4C0052E5B7 /* RMMeetingViewProtocol.h */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		64237AFD17F491690052E5B7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				64237B0017F491980052E5B7 /* RMFileBasedMeetingRepositoryTests.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		64831C7A17F429FA00F2B5AD = {
@@ -158,6 +194,7 @@
 		64831C8E17F429FA00F2B5AD /* DansTaCuve */ = {
 			isa = PBXGroup;
 			children = (
+				64237AE117F47BC00052E5B7 /* Views */,
 				64237ADC17F45E450052E5B7 /* Models */,
 				64237AC917F43A400052E5B7 /* ViewControllers */,
 				64831C9717F429FA00F2B5AD /* RMAppDelegate.h */,
@@ -176,6 +213,7 @@
 				64831C9117F429FA00F2B5AD /* InfoPlist.strings */,
 				64831C9417F429FA00F2B5AD /* main.m */,
 				64831C9617F429FA00F2B5AD /* DansTaCuve-Prefix.pch */,
+				64237AE917F482EB0052E5B7 /* Main.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -183,6 +221,7 @@
 		64831CAB17F429FA00F2B5AD /* DansTaCuveTests */ = {
 			isa = PBXGroup;
 			children = (
+				64237AFD17F491690052E5B7 /* Models */,
 				64237AC817F42E300052E5B7 /* ViewControllers */,
 				64831CB117F429FA00F2B5AD /* DansTaCuveTests.m */,
 				64831CAC17F429FA00F2B5AD /* Supporting Files */,
@@ -275,6 +314,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64237AEA17F482EB0052E5B7 /* Main.storyboard in Resources */,
 				64831C9317F429FA00F2B5AD /* InfoPlist.strings in Resources */,
 				64831C9E17F429FA00F2B5AD /* Images.xcassets in Resources */,
 			);
@@ -295,10 +335,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64237AF417F48A390052E5B7 /* RMFileBasedMeetingRepository.m in Sources */,
+				64237AFC17F48A640052E5B7 /* RMMeetingViewController.m in Sources */,
 				64831C9517F429FA00F2B5AD /* main.m in Sources */,
 				64831C9917F429FA00F2B5AD /* RMAppDelegate.m in Sources */,
 				64831C9C17F429FA00F2B5AD /* DansTaCuve.xcdatamodeld in Sources */,
-				64237ACC17F43A5F0052E5B7 /* RMMeetingViewController.m in Sources */,
+				64237AF517F48A390052E5B7 /* RMMeeting.m in Sources */,
+				64237AF917F48A4C0052E5B7 /* RMMeetingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,8 +349,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64237B0317F491AE0052E5B7 /* RMMeetingViewControllerTests.m in Sources */,
 				64831CB217F429FA00F2B5AD /* DansTaCuveTests.m in Sources */,
-				64237AC717F42E210052E5B7 /* RMMeetingViewControllerTests.m in Sources */,
+				64237B0117F491980052E5B7 /* RMFileBasedMeetingRepositoryTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

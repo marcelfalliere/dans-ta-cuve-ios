@@ -20,7 +20,7 @@
 
 - (void)testExample
 {
-    //XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    XCTAssertEqual(2, 1+1, @"If this fails something is awefully wrong");
 }
 
 @end

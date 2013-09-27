@@ -1,13 +1,8 @@
-//
-//  RMMeetingViewController.m
-//  DansTaCuve
-//
-//  Created by Raphaël on 26/09/13.
-//  Copyright (c) 2013 Dans ta cuve !. All rights reserved.
-//
-
 #import "RMMeetingViewController.h"
 #import "RMMeetingRepositoryProtocol.h"
+#import "RMMeetingViewProtocol.h"
+
+NSString *RMMeetingViewControllerStoryboardID = @"MeetingViewController";
 
 @interface RMMeetingViewController ()
 
@@ -28,7 +23,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    id meeting = [self.meetingRepository currentMeeting];
+    RMMeeting *meeting = [self.meetingRepository currentMeeting];
+
+    [self.meetingView updateWithMeeting:meeting];
 }
 
 @end

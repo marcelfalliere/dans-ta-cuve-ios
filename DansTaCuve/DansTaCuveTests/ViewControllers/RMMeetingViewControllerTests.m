@@ -1,19 +1,14 @@
-//
-//  RMMeetingViewControllerTests.m
-//  DansTaCuve
-//
-//  Created by Raphaël on 26/09/13.
-//  Copyright (c) 2013 Dans ta cuve !. All rights reserved.
-//
-
 #import <XCTest/XCTest.h>
 #import "OCMock/OCMock.h"
 #import "RMMeetingViewController.h"
 #import "RMMeetingRepositoryProtocol.h"
+#import "RMMeetingViewProtocol.h"
+#import "RMMeeting.h"
 
 @interface RMMeetingViewControllerTests : XCTestCase
 
 @property (nonatomic) RMMeetingViewController *sut;
+@property (nonatomic) RMMeetingViewController *storyboardSut;
 
 @end
 
@@ -22,13 +17,20 @@
 - (void)setUp
 {
     [super setUp];
-    // Put setup code here; it will be run once, before the first test case.
+   
     self.sut = [[RMMeetingViewController alloc] init];
+    
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main"
+                                                 bundle:[NSBundle bundleForClass:[RMMeetingViewController class]]];
+    self.storyboardSut  = [sb instantiateViewControllerWithIdentifier:RMMeetingViewControllerStoryboardID];
+
+    
 }
 
 - (void)tearDown
 {
-    // Put teardown code here; it will be run once, after the last test case.
+    self.sut = nil;
+    
     [super tearDown];
 }
 
@@ -37,17 +39,50 @@
     XCTAssertNotNil(self.sut, @"RMMeetingViewController should not be nil when created");
 }
 
-- (void) testContollerGetsCurrentMeeting
+- (void)testControllerHasARepository
 {
-    id mockMeetingStore = [OCMockObject niceMockForProtocol:@protocol(RMMeetingRepositoryProtocol)];
-    self.sut.meetingRepository = mockMeetingStore;
+    [self.storyboardSut view];
+    
+    XCTAssertNotNil(self.storyboardSut.meetingRepository, @"RMMeetingViewController should have a meeting repository");
+}
+
+- (void)testControllerHasView
+{
+    [self.storyboardSut view];
+
+    XCTAssertNotNil(self.storyboardSut.meetingView, @"RMMeetingViewController should have a meeting view");
+}
+
+
+- (void)testContollerGetsCurrentMeeting
+{
+    id mockMeetingRepository = [OCMockObject niceMockForProtocol:@protocol(RMMeetingRepositoryProtocol)];
+    self.sut.meetingRepository = mockMeetingRepository;
     
     
-    [[mockMeetingStore expect] currentMeeting];
+    [[mockMeetingRepository expect] currentMeeting];
     
     [self.sut view];
     
-    [mockMeetingStore verify];
+    [mockMeetingRepository verify];
 }
+
+- (void)testControllerUpdatesViewAtLaunch
+{
+    RMMeeting *aMeeting = [[RMMeeting alloc] init];
+    
+    id mockMeetingRepository = [OCMockObject niceMockForProtocol:@protocol(RMMeetingRepositoryProtocol)];
+    [[[mockMeetingRepository stub] andReturn:aMeeting] currentMeeting];
+    self.sut.meetingRepository = mockMeetingRepository;
+    
+    id mockMeetingView = [OCMockObject niceMockForProtocol:@protocol(RMMeetingViewProtocol)];
+    [[mockMeetingView expect] updateWithMeeting:aMeeting];
+    self.sut.meetingView = mockMeetingView;
+    
+    [self.sut view];
+    
+    [mockMeetingView verify];
+}
+
 
 @end

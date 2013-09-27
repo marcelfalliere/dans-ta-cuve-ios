@@ -1,8 +1,9 @@
 #import <Foundation/Foundation.h>
 
+@class RMMeeting;
+
 @protocol RMMeetingRepositoryProtocol <NSObject>
 
-- (id)currentMeeting;
-- (void)updateMeeting;
+- (RMMeeting *)currentMeeting;
 
 @end

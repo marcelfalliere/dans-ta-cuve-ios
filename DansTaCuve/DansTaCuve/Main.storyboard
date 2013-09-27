@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="tf7-hu-Mlb">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <scenes>
+        <!--Meeting View Controller-->
+        <scene sceneID="KQm-rm-xr0">
+            <objects>
+                <viewController storyboardIdentifier="MeetingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tf7-hu-Mlb" customClass="RMMeetingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sEx-bb-uBp"/>
+                        <viewControllerLayoutGuide type="bottom" id="BFT-xx-cg4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AXB-dq-HfM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rqk-RT-Q8o" customClass="RMMeetingView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="meetingRepository" destination="UPU-Ab-yHX" id="g8c-QZ-pHN"/>
+                        <outlet property="meetingView" destination="rqk-RT-Q8o" id="jOt-T1-DSe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TSG-Ap-qYq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="UPU-Ab-yHX" customClass="RMFileBasedMeetingRepository"/>
+            </objects>
+            <point key="canvasLocation" x="896" y="-147"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
