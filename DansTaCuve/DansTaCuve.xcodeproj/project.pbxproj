@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		64237ADB17F4589B0052E5B7 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64237ADA17F4589B0052E5B7 /* libOCMock.a */; };
 		64237AEA17F482EB0052E5B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64237AE917F482EB0052E5B7 /* Main.storyboard */; };
 		64237AF417F48A390052E5B7 /* RMFileBasedMeetingRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 64237AF117F48A390052E5B7 /* RMFileBasedMeetingRepository.m */; };
 		64237AF517F48A390052E5B7 /* RMMeeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 64237AF217F48A390052E5B7 /* RMMeeting.m */; };
@@ -31,6 +30,7 @@
 		64831CA817F429FA00F2B5AD /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64831C8C17F429FA00F2B5AD /* CoreData.framework */; };
 		64831CB017F429FA00F2B5AD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 64831CAE17F429FA00F2B5AD /* InfoPlist.strings */; };
 		64831CB217F429FA00F2B5AD /* DansTaCuveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64831CB117F429FA00F2B5AD /* DansTaCuveTests.m */; };
+		869DC66B17F9AD4400A917B0 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 869DC66917F9AD3D00A917B0 /* libOCMock.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		64237ADA17F4589B0052E5B7 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = ThirdParty/OCMock/libOCMock.a; sourceTree = "<group>"; };
 		64237AE917F482EB0052E5B7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		64237AEF17F48A390052E5B7 /* RMMeeting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMeeting.h; sourceTree = "<group>"; };
 		64237AF017F48A390052E5B7 /* RMFileBasedMeetingRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMFileBasedMeetingRepository.h; sourceTree = "<group>"; };
@@ -77,6 +76,7 @@
 		64831CAD17F429FA00F2B5AD /* DansTaCuveTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DansTaCuveTests-Info.plist"; sourceTree = "<group>"; };
 		64831CAF17F429FA00F2B5AD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		64831CB117F429FA00F2B5AD /* DansTaCuveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DansTaCuveTests.m; sourceTree = "<group>"; };
+		869DC66917F9AD3D00A917B0 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = ThirdParty/OCMock/libOCMock.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +85,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				64237B0517F577C00052E5B7 /* CoreLocation.framework in Frameworks */,
-				64237ADB17F4589B0052E5B7 /* libOCMock.a in Frameworks */,
 				64831C8917F429FA00F2B5AD /* CoreGraphics.framework in Frameworks */,
 				64831C8D17F429FA00F2B5AD /* CoreData.framework in Frameworks */,
 				64831C8B17F429FA00F2B5AD /* UIKit.framework in Frameworks */,
@@ -101,6 +100,7 @@
 				64831CA817F429FA00F2B5AD /* CoreData.framework in Frameworks */,
 				64831CA717F429FA00F2B5AD /* UIKit.framework in Frameworks */,
 				64831CA617F429FA00F2B5AD /* Foundation.framework in Frameworks */,
+				869DC66B17F9AD4400A917B0 /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,8 +184,8 @@
 		64831C8517F429FA00F2B5AD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				869DC66917F9AD3D00A917B0 /* libOCMock.a */,
 				64237B0417F577C00052E5B7 /* CoreLocation.framework */,
-				64237ADA17F4589B0052E5B7 /* libOCMock.a */,
 				64831C8617F429FA00F2B5AD /* Foundation.framework */,
 				64831C8817F429FA00F2B5AD /* CoreGraphics.framework */,
 				64831C8A17F429FA00F2B5AD /* UIKit.framework */,
@@ -475,7 +475,7 @@
 				INFOPLIST_FILE = "DansTaCuve/DansTaCuve-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/raphael/Documents/Code/dans-ta-cuve-ios/DansTaCuve/ThirdParty/OCMock",
+					"/Users/fredericfalliere/Dev/libs/ios/dans-ta-cuve-ios/DansTaCuve/ThirdParty/OCMock",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -496,7 +496,7 @@
 				INFOPLIST_FILE = "DansTaCuve/DansTaCuve-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/raphael/Documents/Code/dans-ta-cuve-ios/DansTaCuve/ThirdParty/OCMock",
+					"/Users/fredericfalliere/Dev/libs/ios/dans-ta-cuve-ios/DansTaCuve/ThirdParty/OCMock",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -527,7 +527,7 @@
 				INFOPLIST_FILE = "DansTaCuveTests/DansTaCuveTests-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/raphael/Documents/Code/dans-ta-cuve-ios/DansTaCuve/ThirdParty/OCMock",
+					"$(SRCROOT)/ThirdParty/OCMock",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -563,7 +563,7 @@
 				INFOPLIST_FILE = "DansTaCuveTests/DansTaCuveTests-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/raphael/Documents/Code/dans-ta-cuve-ios/DansTaCuve/ThirdParty/OCMock",
+					"$(SRCROOT)/ThirdParty/OCMock",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
